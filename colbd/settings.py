@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'shift.apps.ShiftConfig',
     'suspention.apps.SuspentionConfig',
     'ticket.apps.TicketConfig',
+    'area.apps.AreaConfig'
 
 
 ]

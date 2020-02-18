@@ -38,4 +38,4 @@ class PackageOffer(models.Model):
     installation_charge = models.IntegerField()
 
     def __str__(self):
-        return self.package
+        return str(self.package)

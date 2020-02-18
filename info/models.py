@@ -28,8 +28,8 @@ class Info(models.Model):
     address = models.CharField(max_length=800)
     package = models.ForeignKey(Package, on_delete=models.SET_NULL, null=True)
     ref_by = models.CharField(max_length=50, blank=True)
-    active_on = models.DateField(blank=True)
-    expired_at = models.DateField(blank=True)
+    active_on = models.DateField(blank=True, null=True)
+    expired_at = models.DateField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now=True)
     updated_at = models.DateTimeField(auto_now=True)
 

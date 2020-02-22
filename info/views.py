@@ -31,13 +31,13 @@ class CreateUserApi(generics.CreateAPIView):
     serializer_class = UserSerializer
 
 
-# class ManageUserViewApi(generics.RetrieveUpdateAPIView):
-#     serializer_class = UserSerializer
-#     authentication_classes = [authentication.TokenAuthentication, ]
-#     permission_classes = [IsAuthenticated, ]
+class ManageUserViewApi(generics.RetrieveUpdateAPIView):
+    serializer_class = UserSerializer
+    authentication_classes = [authentication.TokenAuthentication, ]
+    permission_classes = [IsAuthenticated, ]
 
-#     def get_object(self):
-#         return self.request.user
+    def get_object(self):
+        return self.request.user
 
 
 class CreateInfoApi(generics.CreateAPIView):

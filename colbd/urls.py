@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/user/', include('info.urls')),
     path('api/package/', include('package.urls')),
+    path('api/migration/', include('migration.urls')),
 ]

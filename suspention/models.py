@@ -29,5 +29,6 @@ class SuspentionTemporary(models.Model):
 
 class SuspentionPermanently(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    approve = models.BooleanField(default=False)
+    is_done = models.BooleanField(default=False)
+    device_collect_at = models.DateField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)

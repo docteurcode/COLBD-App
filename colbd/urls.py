@@ -21,4 +21,5 @@ urlpatterns = [
     path('api/user/', include('info.urls')),
     path('api/package/', include('package.urls')),
     path('api/migration/', include('migration.urls')),
+    path('api/shift/', include('shift.urls')),
 ]

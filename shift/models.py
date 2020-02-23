@@ -8,7 +8,7 @@ from area.models import Distic, Thana
 
 class ConnectionShift(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    done = models.BooleanField(default=False)
+    is_done = models.BooleanField(default=False)
     distic = models.ForeignKey(Distic, on_delete=models.SET_NULL, null=True)
     thana = models.ForeignKey(Thana, on_delete=models.SET_NULL, null=True)
     address = models.CharField(max_length=700)
